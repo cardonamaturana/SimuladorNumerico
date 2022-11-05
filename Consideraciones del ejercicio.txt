@@ -1,0 +1,4 @@
+
+x,a,c > 0
+* validacion de que m es mayor que todos.
+m es el numero primo mas grande menos que p a la d

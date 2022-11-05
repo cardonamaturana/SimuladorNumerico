@@ -1,0 +1,1 @@
+cuando el READER.line() lee el documento no trae el primer elemento del archivo
