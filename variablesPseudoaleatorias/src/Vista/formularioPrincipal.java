@@ -113,6 +113,7 @@ public class formularioPrincipal extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jComboSemilla = new javax.swing.JComboBox<>();
+        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -269,6 +270,8 @@ public class formularioPrincipal extends javax.swing.JFrame {
 
         jLabel5.setText("Seleccione Semilla (x0)");
 
+        jLabel6.setText("Correcciones");
+
         javax.swing.GroupLayout jPanelMixtoLayout = new javax.swing.GroupLayout(jPanelMixto);
         jPanelMixto.setLayout(jPanelMixtoLayout);
         jPanelMixtoLayout.setHorizontalGroup(
@@ -304,13 +307,19 @@ public class formularioPrincipal extends javax.swing.JFrame {
                 .addGap(100, 100, 100)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelMixtoLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel6)
+                .addGap(186, 186, 186))
         );
         jPanelMixtoLayout.setVerticalGroup(
             jPanelMixtoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelMixtoLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel6)
+                .addGap(18, 18, 18)
                 .addGroup(jPanelMixtoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(jComboSemilla, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -587,6 +596,7 @@ public class formularioPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanelMixto;
     private javax.swing.JRadioButton jRadioBMixto;
