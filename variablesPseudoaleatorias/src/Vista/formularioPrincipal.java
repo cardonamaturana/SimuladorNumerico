@@ -114,6 +114,12 @@ public class formularioPrincipal extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jComboSemilla = new javax.swing.JComboBox<>();
         jLabel6 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jRadioButton2 = new javax.swing.JRadioButton();
+        jRadioButton3 = new javax.swing.JRadioButton();
+        jRadioButton4 = new javax.swing.JRadioButton();
+        jRadioButton5 = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -265,17 +271,71 @@ public class formularioPrincipal extends javax.swing.JFrame {
                 .addComponent(jRadioBSmirnov)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton1)
-                .addContainerGap(36, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jLabel5.setText("Seleccione Semilla (x0)");
 
         jLabel6.setText("Correcciones");
 
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Transformar a variables aleatorias y exportar", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP));
+
+        jRadioButton1.setText("Exponencial");
+
+        jRadioButton2.setText("Poisson");
+
+        jRadioButton3.setText("Normal");
+
+        jRadioButton4.setText("uniforme");
+
+        jRadioButton5.setText("Binomial");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jRadioButton4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jRadioButton3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jRadioButton2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jRadioButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jRadioButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jRadioButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jRadioButton2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jRadioButton3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jRadioButton4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jRadioButton5)
+                .addContainerGap(18, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout jPanelMixtoLayout = new javax.swing.GroupLayout(jPanelMixto);
         jPanelMixto.setLayout(jPanelMixtoLayout);
         jPanelMixtoLayout.setHorizontalGroup(
             jPanelMixtoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelMixtoLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel6)
+                .addGap(186, 186, 186))
+            .addGroup(jPanelMixtoLayout.createSequentialGroup()
+                .addGap(100, 100, 100)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanelMixtoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
             .addGroup(jPanelMixtoLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanelMixtoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -303,14 +363,6 @@ public class formularioPrincipal extends javax.swing.JFrame {
                             .addComponent(jComboMultiplicativo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jComboSemilla, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap())
-            .addGroup(jPanelMixtoLayout.createSequentialGroup()
-                .addGap(100, 100, 100)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelMixtoLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel6)
-                .addGap(186, 186, 186))
         );
         jPanelMixtoLayout.setVerticalGroup(
             jPanelMixtoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -341,8 +393,10 @@ public class formularioPrincipal extends javax.swing.JFrame {
                     .addComponent(jRadioBMixto)
                     .addComponent(jRadioBMultiplicativo))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Generador de numeros", jPanelMixto);
@@ -360,6 +414,97 @@ public class formularioPrincipal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        jRadioBPuebaPromedio.setSelected(true);
+        jBotonValidar.doClick();
+        jRadioBPruebaFrecuencia.setSelected(true);
+        jBotonValidar.doClick();
+        jRadioBSmirnov.setSelected(true);
+        jBotonValidar.doClick();
+        jRadioBPruebaCorridaArribaAbajo.setSelected(true);
+        jBotonValidar.doClick();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jBotonValidarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBotonValidarActionPerformed
+        if (jRadioBPuebaPromedio.isSelected()) {
+            if(Logica.PruebasEstadisticas.PruebaDePromedio(array)){
+                jRadioBPuebaPromedio.setForeground(Color.GREEN);
+                /*JOptionPane.showMessageDialog(null, "Los numeros generados NO pueden ser RECHAZADOS, de acuerdo \n"
+                    +"a la prueba estadistica de promedios");*/
+            }else{
+                jRadioBPuebaPromedio.setForeground(Color.RED);
+                /*JOptionPane.showMessageDialog(null, "Los numeros generados son RECHAZADOS, de acuerdo \n"
+                    +"a la prueba estadistica de promedios");  */
+            }
+        }else if (jRadioBPruebaFrecuencia.isSelected()){
+            //double a= Logica.PruebasEstadisticas.RetornarCantidad(array);
+            if(Logica.PruebasEstadisticas.PruebaDeFrecuencia(array)){
+                jRadioBPruebaFrecuencia.setForeground(Color.GREEN);
+                /*JOptionPane.showMessageDialog(null, "Los numeros generados NO pueden SER RECHAZADOS, de acuerdo\n"
+                    +"a la prueba estadistica de frecuencia");*/
+            }else{
+                jRadioBPruebaFrecuencia.setForeground(Color.RED);
+                /*JOptionPane.showMessageDialog(null, "Los numeros generados SON RECHAZADOS, de acuerdo\n"
+                    +"a la prueba estadistica de frecuencia");  */
+            }
+        }else if (jRadioBSmirnov.isSelected()){
+            //double a= Logica.PruebasEstadisticas.RetornarCantidad(array);
+            if(Logica.PruebasEstadisticas.PruebaDeKolmogorov_Smirnov(array)){
+                jRadioBSmirnov.setForeground(Color.GREEN);
+                /*JOptionPane.showMessageDialog(null, "Los numeros generados NO pueden SER RECHAZADOS, de acuerdo\n"
+                    +"a la prueba estadistica de smirnov");*/
+            }else{
+                jRadioBSmirnov.setForeground(Color.RED);
+                /*JOptionPane.showMessageDialog(null, "Los numeros generados SON RECHAZADOS, de acuerdo\n"
+                    +"a la prueba estadistica de smirnov");  */
+            }
+        }else if (jRadioBPruebaCorridaArribaAbajo.isSelected()){
+            //double a= Logica.PruebasEstadisticas.RetornarCantidad(array);
+            if(Logica.PruebasEstadisticas.pruebaCorridaArribaAbajo(array)){
+                jRadioBPruebaCorridaArribaAbajo.setForeground(Color.GREEN);
+                /*JOptionPane.showMessageDialog(null, "Los numeros generados NO pueden SER RECHAZADOS, de acuerdo\n"
+                    +"a la prueba estadistica corrida arriba abajo");*/
+            }else{
+                jRadioBPruebaCorridaArribaAbajo.setForeground(Color.RED);
+                /*JOptionPane.showMessageDialog(null, "Los numeros generados SON RECHAZADOS, de acuerdo\n"
+                    +"a la prueba estadistica corrida de arriba abajo");  */
+            }
+
+        }
+    }//GEN-LAST:event_jBotonValidarActionPerformed
+
+    private void jRadioBPruebaCorridaArribaAbajoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioBPruebaCorridaArribaAbajoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioBPruebaCorridaArribaAbajoActionPerformed
+
+    private void jRadioBPuebaPromedioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioBPuebaPromedioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioBPuebaPromedioActionPerformed
+
+    private void jRadioBMultiplicativoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioBMultiplicativoActionPerformed
+        if (jRadioBMultiplicativo.isSelected()){
+            jComboMultiplicativo.removeAllItems();
+            for (String string : Logica.Generador.cargarValoresAMultiplicativo()) {
+                jComboMultiplicativo.addItem(string);
+
+            }
+            jComboAditivo.setEnabled(false);
+        }else{
+            jComboAditivo.setEnabled(true);
+        }
+    }//GEN-LAST:event_jRadioBMultiplicativoActionPerformed
+
+    private void jRadioBMixtoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioBMixtoActionPerformed
+        jComboAditivo.setEnabled(true);
+        jComboMultiplicativo.removeAllItems();
+        for (String string : Logica.Generador.cargarValoresA()) {
+            jComboMultiplicativo.addItem(string);
+
+        }
+
+    }//GEN-LAST:event_jRadioBMixtoActionPerformed
 
     private void jComboAditivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboAditivoActionPerformed
         // TODO add your handling code here:
@@ -380,21 +525,28 @@ public class formularioPrincipal extends javax.swing.JFrame {
     private void jComboModiuloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboModiuloActionPerformed
 
         int i=4;
-        
-        
+
         while(!Logica.Generador.sonRelativamentePrimos(i, Integer.parseInt(jComboModiulo.getSelectedItem().toString()))){
             i++;
         }
-        
+
         jComboMultiplicativo.removeAllItems();
-        
+
         for(int j=1; j<50; j++){
             if(((j-1)%i)==0){
                 jComboMultiplicativo.addItem(String.valueOf(j));
             }
         }
-                
+
     }//GEN-LAST:event_jComboModiuloActionPerformed
+
+    private void jComboModiuloMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jComboModiuloMouseExited
+
+    }//GEN-LAST:event_jComboModiuloMouseExited
+
+    private void jComboModiuloMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jComboModiuloMouseClicked
+
+    }//GEN-LAST:event_jComboModiuloMouseClicked
 
     private void jBotonGenerarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBotonGenerarActionPerformed
         jRadioBPruebaCorridaArribaAbajo.setForeground(Color.BLACK);
@@ -402,145 +554,44 @@ public class formularioPrincipal extends javax.swing.JFrame {
         jRadioBPuebaPromedio.setForeground(Color.BLACK);
         jRadioBSmirnov.setForeground(Color.BLACK);
         jRadioBPruebaFrecuencia.setForeground(Color.BLACK);
-        
-        
+
         int a=0;
         int c=0;
         int m=0;
         int x0=0;
-        
+
         a=Integer.parseInt(String.valueOf(jComboMultiplicativo.getSelectedItem()));
         m=Integer.parseInt(String.valueOf(jComboModiulo.getSelectedItem()));
         c=Integer.parseInt(String.valueOf(jComboAditivo.getSelectedItem()));
         x0=Integer.parseInt(String.valueOf(jComboSemilla.getSelectedItem()));
         if (jRadioBMixto.isSelected()){
-          
-        if(Logica.Generador.ValidarCampos(a, c, m,x0)){
-            try {
-                array=Logica.Generador.Mixto(m, a, c,x0);
-                jBotonValidar.setEnabled(true);
-            } catch (IOException ex) {
-                Logger.getLogger(formularioPrincipal.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }else{
 
-            JOptionPane.showMessageDialog(null, "El valor de (M) debe ser mayor que (a) y (c)");
-        } 
+            if(Logica.Generador.ValidarCampos(a, c, m,x0)){
+                try {
+                    array=Logica.Generador.Mixto(m, a, c,x0);
+                    jBotonValidar.setEnabled(true);
+                } catch (IOException ex) {
+                    Logger.getLogger(formularioPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }else{
+
+                JOptionPane.showMessageDialog(null, "El valor de (M) debe ser mayor que (a) y (c)");
+            }
         }else if (jRadioBMultiplicativo.isSelected()){
-        if(Logica.Generador.ValidarCampos(a, c, m, x0)){
-            try {
-                array=Logica.Generador.Multiplicativo(m, a, x0);
-                jBotonValidar.setEnabled(true);
-            } catch (IOException ex) {
-                Logger.getLogger(formularioPrincipal.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }else{
+            if(Logica.Generador.ValidarCampos(a, c, m, x0)){
+                try {
+                    array=Logica.Generador.Multiplicativo(m, a, x0);
+                    jBotonValidar.setEnabled(true);
+                } catch (IOException ex) {
+                    Logger.getLogger(formularioPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }else{
 
-            JOptionPane.showMessageDialog(null, "El valor de (M) debe ser mayor que (a) y (c)");
-        } 
+                JOptionPane.showMessageDialog(null, "El valor de (M) debe ser mayor que (a) y (c)");
+            }
         }
-        
 
     }//GEN-LAST:event_jBotonGenerarActionPerformed
-
-    private void jBotonValidarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBotonValidarActionPerformed
-           if (jRadioBPuebaPromedio.isSelected()) {
-            if(Logica.PruebasEstadisticas.PruebaDePromedio(array)){
-                jRadioBPuebaPromedio.setForeground(Color.GREEN);
-                /*JOptionPane.showMessageDialog(null, "Los numeros generados NO pueden ser RECHAZADOS, de acuerdo \n"
-                                                        +"a la prueba estadistica de promedios");*/
-            }else{
-                jRadioBPuebaPromedio.setForeground(Color.RED);
-              /*JOptionPane.showMessageDialog(null, "Los numeros generados son RECHAZADOS, de acuerdo \n"
-                                                        +"a la prueba estadistica de promedios");  */
-            }
-        }else if (jRadioBPruebaFrecuencia.isSelected()){
-            //double a= Logica.PruebasEstadisticas.RetornarCantidad(array);
-            if(Logica.PruebasEstadisticas.PruebaDeFrecuencia(array)){
-                jRadioBPruebaFrecuencia.setForeground(Color.GREEN);
-                /*JOptionPane.showMessageDialog(null, "Los numeros generados NO pueden SER RECHAZADOS, de acuerdo\n"
-                                                        +"a la prueba estadistica de frecuencia");*/
-        }else{
-                jRadioBPruebaFrecuencia.setForeground(Color.RED);
-              /*JOptionPane.showMessageDialog(null, "Los numeros generados SON RECHAZADOS, de acuerdo\n"
-                                                        +"a la prueba estadistica de frecuencia");  */
-            }
-        }else if (jRadioBSmirnov.isSelected()){
-            //double a= Logica.PruebasEstadisticas.RetornarCantidad(array);
-            if(Logica.PruebasEstadisticas.PruebaDeKolmogorov_Smirnov(array)){
-                jRadioBSmirnov.setForeground(Color.GREEN);
-                /*JOptionPane.showMessageDialog(null, "Los numeros generados NO pueden SER RECHAZADOS, de acuerdo\n"
-                                                        +"a la prueba estadistica de smirnov");*/
-        }else{
-                jRadioBSmirnov.setForeground(Color.RED);
-              /*JOptionPane.showMessageDialog(null, "Los numeros generados SON RECHAZADOS, de acuerdo\n"
-                                                        +"a la prueba estadistica de smirnov");  */
-            }
-        }else if (jRadioBPruebaCorridaArribaAbajo.isSelected()){
-            //double a= Logica.PruebasEstadisticas.RetornarCantidad(array);
-            if(Logica.PruebasEstadisticas.pruebaCorridaArribaAbajo(array)){
-                jRadioBPruebaCorridaArribaAbajo.setForeground(Color.GREEN);
-                /*JOptionPane.showMessageDialog(null, "Los numeros generados NO pueden SER RECHAZADOS, de acuerdo\n"
-                                                        +"a la prueba estadistica corrida arriba abajo");*/
-        }else{
-                jRadioBPruebaCorridaArribaAbajo.setForeground(Color.RED);
-              /*JOptionPane.showMessageDialog(null, "Los numeros generados SON RECHAZADOS, de acuerdo\n"
-                                                        +"a la prueba estadistica corrida de arriba abajo");  */
-            }
-            
-        }
-    }//GEN-LAST:event_jBotonValidarActionPerformed
-
-    private void jRadioBMultiplicativoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioBMultiplicativoActionPerformed
-      if (jRadioBMultiplicativo.isSelected()){
-          jComboMultiplicativo.removeAllItems();
-          for (String string : Logica.Generador.cargarValoresAMultiplicativo()) {
-              jComboMultiplicativo.addItem(string);
-              
-          }
-          jComboAditivo.setEnabled(false);
-      }else{
-          jComboAditivo.setEnabled(true);
-      }
-    }//GEN-LAST:event_jRadioBMultiplicativoActionPerformed
-
-    private void jRadioBMixtoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioBMixtoActionPerformed
-       jComboAditivo.setEnabled(true);
-       jComboMultiplicativo.removeAllItems();
-       for (String string : Logica.Generador.cargarValoresA()) {
-              jComboMultiplicativo.addItem(string);
-              
-          }
-       
-    }//GEN-LAST:event_jRadioBMixtoActionPerformed
-
-    private void jRadioBPuebaPromedioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioBPuebaPromedioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioBPuebaPromedioActionPerformed
-
-    private void jComboModiuloMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jComboModiuloMouseExited
-    
-    }//GEN-LAST:event_jComboModiuloMouseExited
-
-    private void jComboModiuloMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jComboModiuloMouseClicked
-
-    }//GEN-LAST:event_jComboModiuloMouseClicked
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-             // TODO add your handling code here:
-        jRadioBPuebaPromedio.setSelected(true);
-        jBotonValidar.doClick();
-        jRadioBPruebaFrecuencia.setSelected(true);
-        jBotonValidar.doClick();
-        jRadioBSmirnov.setSelected(true);
-        jBotonValidar.doClick();
-        jRadioBPruebaCorridaArribaAbajo.setSelected(true);
-        jBotonValidar.doClick();
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jRadioBPruebaCorridaArribaAbajoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioBPruebaCorridaArribaAbajoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioBPruebaCorridaArribaAbajoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -598,6 +649,7 @@ public class formularioPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanelMixto;
     private javax.swing.JRadioButton jRadioBMixto;
     private javax.swing.JRadioButton jRadioBMultiplicativo;
@@ -606,6 +658,11 @@ public class formularioPrincipal extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioBPruebaPoker;
     private javax.swing.JRadioButton jRadioBPuebaPromedio;
     private javax.swing.JRadioButton jRadioBSmirnov;
+    private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton2;
+    private javax.swing.JRadioButton jRadioButton3;
+    private javax.swing.JRadioButton jRadioButton4;
+    private javax.swing.JRadioButton jRadioButton5;
     private javax.swing.JTabbedPane jTabbedPane1;
     // End of variables declaration//GEN-END:variables
 }
